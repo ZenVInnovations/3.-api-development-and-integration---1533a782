@@ -64,23 +64,7 @@ Frontend: http://localhost:5173
 
 Project Structure:
 
-3.-api-development-and-integration---1533a782/
-├── api/                      # Backend
-│   ├── controllers/          # Request handlers
-│   ├── models/               # MongoDB schemas
-│   ├── routes/               # API routes
-│   ├── .env                  # Environment variables
-│   ├── index.js              # Entry point
-│   └── package.json          # Dependencies
-│
-└── client/                   # Frontend
-    ├── public/               # Static files
-    ├── src/
-    │   ├── components/       # React components
-    │   ├── pages/            # Page components
-    │   ├── App.jsx           # Main component
-    │   └── main.jsx          # Entry point
-    └── package.json          # Dependencies
+![alt text](image.png)
 
 API Endpoints:
 
