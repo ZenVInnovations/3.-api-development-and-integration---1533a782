@@ -1,94 +1,93 @@
-Task Management App
+```markdown
+# Task Management App 📋
 
-A full-stack MERN (MongoDB, Express.js, React, Node.js) application for efficient task management with a modern dashboard interface.
+A full-stack MERN application featuring a modern dashboard interface for efficient task management.
 
-<img alt="Task Management Dashboard" src="https://via.placeholder.com/800x400?text=Task+Management+Dashboard">
+![Task Management Dashboard](https://via.placeholder.com/800x400?text=Task+Management+Dashboard)
 
+## ✨ Features
+- **CRUD Operations**: Create, Read, Update, and Delete tasks
+- **Advanced Filtering**: Sort and filter tasks by status, priority, and due date
+- **Analytics Dashboard**: Visual task statistics and progress tracking
+- **Responsive Design**: Optimized for all screen sizes
+- **Modern UI**: Built with Tailwind CSS for sleek aesthetics
 
-Features:
+## 🛠️ Tech Stack
+**Frontend:**  
+![React](https://img.shields.io/badge/-React-61DAFB?logo=react&logoColor=white)  
+![Tailwind CSS](https://img.shields.io/badge/-Tailwind_CSS-38B2AC?logo=tailwind-css&logoColor=white)
 
-1.Create, view, update, and delete tasks
-2.Filter and sort tasks
-3.User-friendly dashboard with task statistics
-4.Responsive design for mobile and desktop
-5.Modern UI with Tailwind CSS
+**Backend:**  
+![Node.js](https://img.shields.io/badge/-Node.js-339933?logo=node.js&logoColor=white)  
+![Express.js](https://img.shields.io/badge/-Express.js-000000?logo=express&logoColor=white)
 
-Technologies Used:
+**Database:**  
+![MongoDB Atlas](https://img.shields.io/badge/-MongoDB_Atlas-47A248?logo=mongodb&logoColor=white)
 
-Frontend: React.js, Tailwind CSS, React Router
-Backend: Node.js, Express.js
-Database: MongoDB Atlas
-Other: RESTful API architecture
+## 🚀 Installation
 
-Installation:
+### Prerequisites
+- Node.js v14+
+- npm or yarn
+- MongoDB Atlas account (optional)
 
-Prerequisites:
-Node.js (v14 or higher)
-npm or yarn
-
-Setup Instructions:
-
-1.clone Repo:
-
+### Backend Setup
+```bash
+# Clone repository
 git clone https://github.com/ZenVInnovations/3.-api-development-and-integration---1533a782.git
-cd 3.-api-development-and-integration---1533a782
-
-2.Backend Setup (API):
-# Navigate to the api directory
-cd api
+cd 3.-api-development-and-integration---1533a782/api
 
 # Install dependencies
 npm install
 
-# Create .env file and add the following content
+# Configure environment
 echo "PORT=3000
 MONGODB_CONN=\"mongodb+srv://taskmanagementRooman:taskmanagementRooman@cluster2.sczmhgb.mongodb.net/?retryWrites=true&w=majority&appName=Cluster2\"" > .env
 
-# Start the server
+# Start server
 npm start
+```
 
-3.Frontend Setup (Client):
-# Open a new terminal and navigate to the client directory
+### Frontend Setup
+```bash
 cd ../client
-
-# Install dependencies
 npm install
-
-# Start the development server
 npm run dev
+```
 
-4.Access the application
+## 🌐 Access Points
+- **Backend API**: http://localhost:3000
+- **Frontend App**: http://localhost:5173
 
-Backend API: http://localhost:3000
-Frontend: http://localhost:5173
+## 🔌 API Endpoints
+| Method | Endpoint                  | Description                 |
+|--------|---------------------------|-----------------------------|
+| GET    | /api/task/get-all-task    | Retrieve all tasks          |
+| POST   | /api/task/create-task     | Create new task             |
+| GET    | /api/task/get-task/:taskid| Get specific task           |
+| PUT    | /api/task/update-task/:taskid| Update task              |
+| DELETE | /api/task/delete-task/:taskid| Delete task              |
 
-Project Structure:
+## 📊 Database Configuration
+Utilizes a shared MongoDB Atlas cluster for development:
+```env
+MONGODB_CONN="mongodb+srv://taskmanagementRooman:taskmanagementRooman@cluster2.sczmhgb.mongodb.net/"
+```
 
-![alt text](image.png)
+> **Important Note**  
+> This shared database is for demonstration purposes only. For production use, create your own MongoDB Atlas instance with proper security measures.
 
-API Endpoints:
+## 📈 Dashboard Features
+- Real-time task statistics
+- Interactive filtering system
+- Quick-action task controls
+- Mobile-optimized navigation
+- Visual progress indicators
 
-1.GET /api/task/get-all-task - Get all tasks
-2.POST /api/task/create-task - Create new task
-3.GET /api/task/get-task/:taskid - Get specific task
-4.PUT /api/task/update-task/:taskid - Update task
-5.DELETE /api/task/delete-task/:taskid - Delete task
+## 🧑💻 Contributors
+- Adithya L
+- G Hruthik Reddy  
+- Tejus E
+- Yashaswini Krishna M
 
-Database:
-The application uses a shared MongoDB Atlas database for development purposes. The connection string is already configured in the .env file.
-
-Note: This shared database is for development purposes. For production, it's recommended to use your own MongoDB Atlas instance with proper security measures.
-
-Dashboard
-The dashboard provides:
-1.Task summary statistics
-2.Task listing with filtering options
-3.Quick actions for task management
-4.Responsive sidebar navigation
-
-Contributors
-Adithya L
-G Hruthik Reddy
-Tejus E
-Yashaswini Krishna M
-
+---
