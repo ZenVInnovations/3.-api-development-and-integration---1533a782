@@ -71,6 +71,21 @@ npm run dev
 - **Backend API**: http://localhost:3000
 - **Frontend App**: http://localhost:5173
 
+# Example API Calls
+
+1. To get all users:
+    curl http://localhost:3000/users
+
+   Expected response:
+    [
+  {
+    "id": 1,
+    "name": "John Doe"
+  },
+  ...
+]
+
+
 ## 🔌 API Endpoints
 | Method | Endpoint                  | Description                 |
 |--------|---------------------------|-----------------------------|
